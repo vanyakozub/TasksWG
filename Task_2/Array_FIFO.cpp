@@ -19,7 +19,6 @@ void Array_FIFO::push_back(int val)
 	this->buff[tail % size] = val;
 	cnt++;
 	tail++;
-
 	if (tail == size)
 		tail = 0;
 	if (cnt - 1 > size)
@@ -31,7 +30,6 @@ int Array_FIFO::pop_front()
 	if (cnt > 0)
 	{
 		int result = this->buff[head];
-		
 		cnt--;
 		head++;
 		if (head == size)

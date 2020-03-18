@@ -13,7 +13,6 @@ List_FIFO::List_FIFO(int n)
 	for (int i = 1; i < size; i++)
 	{
 		tmp->next = new node;
-		//tmp->next->value = 0;
 		tmp->next->prev = tmp;
 		tmp = tmp->next;
 		if (i == size - 1)
